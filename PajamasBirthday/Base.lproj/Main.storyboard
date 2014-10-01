@@ -44,6 +44,16 @@
                                 <rect key="frame" x="174" y="139" width="120" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMw-go-k72">
+                                <rect key="frame" x="11" y="274" width="112" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hGm-TO-BqT" kind="modal" modalTransitionStyle="partialCurl" id="JpO-5M-Vsv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -57,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="110" y="121"/>
         </scene>
-        <!--View Controller-->
+        <!--Box View Controller-->
         <scene sceneID="gFz-BK-tKW">
             <objects>
-                <viewController id="hGm-TO-BqT" sceneMemberID="viewController">
+                <viewController id="hGm-TO-BqT" customClass="BoxViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sd2-S4-j6n"/>
                         <viewControllerLayoutGuide type="bottom" id="sAu-jn-t9D"/>
@@ -68,8 +78,33 @@
                     <view key="view" contentMode="scaleToFill" id="8kw-Js-WBt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boxupper.png" translatesAutoresizingMaskIntoConstraints="NO" id="92P-ob-bb9">
+                                <rect key="frame" x="-8" y="377" width="368" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOH-qi-Nql">
+                                <rect key="frame" x="76" y="222" width="185" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cathand.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cathandClick:" destination="hGm-TO-BqT" eventType="touchUpInside" id="4ZP-iy-HAJ"/>
+                                    <action selector="cathandTouchDown:" destination="hGm-TO-BqT" eventType="touchDown" id="3RX-WG-90w"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boxbottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="S45-JC-vMr">
+                                <rect key="frame" x="-16" y="390" width="368" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wkX-Uh-t26"/>
+                    <connections>
+                        <outlet property="cathandBtn" destination="oOH-qi-Nql" id="Oe7-JP-IUo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hh2-TE-cXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,6 +113,9 @@
     </scenes>
     <resources>
         <image name="2cat.png" width="930" height="1164"/>
+        <image name="boxbottom.png" width="762" height="443"/>
+        <image name="boxupper.png" width="719" height="100"/>
+        <image name="cathand.png" width="210" height="300"/>
         <image name="date.png" width="199" height="52"/>
         <image name="from.png" width="274" height="51"/>
         <image name="hbtext.png" width="415" height="143"/>
