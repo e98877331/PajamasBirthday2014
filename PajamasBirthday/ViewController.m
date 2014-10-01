@@ -34,18 +34,34 @@ NSTimer * timer;
                                            selector:@selector(rotateImage)
                                            userInfo:nil
                                             repeats:YES];
-    [UIView animateWithDuration:1
-                          delay:0.0
-                        options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-                         // do whatever animation you want, e.g.,
-                         
-                         CGRect frame = self.birthdayText.frame;
-                         
-                         [self.birthdayText setFrame:CGRectMake(frame.origin.x
-                                                                , frame.origin.y +5, frame.size.width, frame.size.height)];
-                     }
-                     completion:NULL];
+//    [UIView animateWithDuration:1
+//                          delay:0.0
+//                        options:UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat | UIViewAnimationOptionCurveEaseInOut
+//                     animations:^{
+//                         // do whatever animation you want, e.g.,
+//                         
+//                         CGRect frame = self.birthdayText.frame;
+//                         
+//                         [self.birthdayText setFrame:CGRectMake(frame.origin.x
+//                                                                , frame.origin.y +5, frame.size.width, frame.size.height)];
+//                     }
+//                     completion:NULL];
+//    
+
+    
+    
+    
+    NSString *keyPath = @"transform.translation.y";
+    CABasicAnimation *wave1ScaleAnimation = [CABasicAnimation animationWithKeyPath:keyPath];
+    wave1ScaleAnimation.toValue = [NSNumber numberWithFloat:5];
+    wave1ScaleAnimation.duration = 0.5;
+    //infinity loop
+    wave1ScaleAnimation.repeatCount = HUGE_VALF;
+    //totally 2 second per cycle
+    wave1ScaleAnimation.autoreverses = YES;
+    wave1ScaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [self.birthdayText.layer addAnimation:wave1ScaleAnimation forKey:@"RecordingAnimation"];
+
     
 
 
@@ -55,6 +71,7 @@ NSTimer * timer;
 int imageState = 0;
 -(void)rotateImage
 {
+    //NSLog(@"tic tic");
     if(!imageState)
     {
     self.wolfyImage.transform = CGAffineTransformMakeRotation(.3);
