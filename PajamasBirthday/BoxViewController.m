@@ -11,6 +11,7 @@
 @interface BoxViewController ()
 
 @end
+bool catHandsUp = false;
 
 @implementation BoxViewController
 
@@ -68,6 +69,44 @@
 }
 */
 #pragma mark - cat hand animation
+bool isRunningAnimation = false;
+-(void) handsUp
+{
+
+//    [UIView animateWithDuration:3 animations:^{
+//        self.cathandBtn.frame = CGRectMake(76, 222, 185, 214);
+//    }];
+    if(!isRunningAnimation)
+    {
+        isRunningAnimation = true;
+    [UIView animateWithDuration:3 animations:^{
+        self.cathandBtn.frame = CGRectMake(76, 222, 185, 214);
+    } completion:^(BOOL finished) {
+            catHandsUp = true;
+        isRunningAnimation = false;
+    }];
+    }
+    
+}
+
+-(void)handsDown
+{
+//    catHandsUp = false;
+//    [UIView animateWithDuration:3 animations:^{
+//        self.cathandBtn.frame = CGRectMake(76, 417, 185, 214);
+//    }];
+    
+    if(!isRunningAnimation)
+    {isRunningAnimation = true;
+    [UIView animateWithDuration:3 animations:^{
+        self.cathandBtn.frame = CGRectMake(76, 417, 185, 214);
+    } completion:^(BOOL finished) {
+        catHandsUp = false;
+//                self.cathandBtn.frame = CGRectMake(76, 417, 185, 214);
+        isRunningAnimation = false;
+    }];
+    }
+}
 
 #pragma mark - IBAction
 
@@ -83,7 +122,15 @@
                    error:&error];
     [_audioPlayer play];
     
-    self.cathandBtn.transform = CGAffineTransformIdentity;
+    //self.cathandBtn.transform = CGAffineTransformIdentity;
+    if(!catHandsUp)
+    {
+    [self handsUp];
+    }
+    else
+    {
+    [self handsDown];
+    }
     
 }
 
@@ -101,10 +148,12 @@
                    error:&error];
     [_audioPlayer play];
 
-    self.cathandBtn.transform = CGAffineTransformIdentity;
+   // self.cathandBtn.transform = CGAffineTransformIdentity;
+     self.cathandBtn.layer.frame = CGRectMake(76, 222, 185, 214);
 }
 - (IBAction)cathandTouchDown:(id)sender {
-    self.cathandBtn.transform = CGAffineTransformMakeScale(0.98, 0.98);
+//    self.cathandBtn.transform = CGAffineTransformMakeScale(0.98, 0.98);
+    self.cathandBtn.layer.frame = CGRectMake(80, 227, 175, 204);
 }
 
 #pragma mard - AVAudioPlayerDelegate
