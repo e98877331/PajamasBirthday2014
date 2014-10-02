@@ -67,18 +67,34 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark - cat hand animation
 
 #pragma mark - IBAction
 
+- (IBAction)knockClick:(id)sender {
+    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"knock"
+                                         ofType:@"wav"]];
+    
+    NSError *error;
+    _audioPlayer =[[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    [_audioPlayer play];
+    
+    self.cathandBtn.transform = CGAffineTransformIdentity;
+    
+}
 
 - (IBAction)cathandClick:(id)sender {
-    int r = arc4random_uniform(23);
+    int r = arc4random_uniform(49);
     NSString *fileName = [NSString stringWithFormat:@"miew%d",r];
     
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                          pathForResource:fileName
                                          ofType:@"wav"]];
-    NSLog(fileName);
+
     NSError *error;
     _audioPlayer =[[AVAudioPlayer alloc]
                    initWithContentsOfURL:url
