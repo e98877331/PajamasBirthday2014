@@ -63,7 +63,16 @@ NSTimer * timer;
     [self.birthdayText.layer addAnimation:wave1ScaleAnimation forKey:@"RecordingAnimation"];
 
     
-
+    NSString *keyPath2 = @"transform.scale";
+    CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:keyPath2];
+    scale.toValue = [NSNumber numberWithFloat:0.8];
+    scale.duration = 2;
+    //infinity loop
+    scale.repeatCount = HUGE_VALF;
+    //totally 2 second per cycle
+    scale.autoreverses = YES;
+    scale.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    [self.heart.layer addAnimation:scale forKey:@"scaleAnimation"];
 
 }
 

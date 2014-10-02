@@ -86,6 +86,9 @@
 		4C8F640119DDD130004200EC /* miew9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F63CF19DDD130004200EC /* miew9.wav */; };
 		4C8F640319DDD278004200EC /* knock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640219DDD278004200EC /* knock.wav */; };
 		4C8F640519DDE257004200EC /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640419DDE257004200EC /* bg.jpg */; };
+		4C8F640719DDE56E004200EC /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640619DDE56E004200EC /* heart.png */; };
+		4C8F640A19DDEB03004200EC /* lowertext.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640819DDEB03004200EC /* lowertext.png */; };
+		4C8F640B19DDEB03004200EC /* uppertext.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640919DDEB03004200EC /* uppertext.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +187,9 @@
 		4C8F63CF19DDD130004200EC /* miew9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = miew9.wav; sourceTree = "<group>"; };
 		4C8F640219DDD278004200EC /* knock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = knock.wav; sourceTree = "<group>"; };
 		4C8F640419DDE257004200EC /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		4C8F640619DDE56E004200EC /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		4C8F640819DDEB03004200EC /* lowertext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowertext.png; sourceTree = "<group>"; };
+		4C8F640919DDEB03004200EC /* uppertext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uppertext.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +298,9 @@
 		4C8F62E519D9DC9C004200EC /* image */ = {
 			isa = PBXGroup;
 			children = (
+				4C8F640619DDE56E004200EC /* heart.png */,
+				4C8F640819DDEB03004200EC /* lowertext.png */,
+				4C8F640919DDEB03004200EC /* uppertext.png */,
 				4C8F640419DDE257004200EC /* bg.jpg */,
 				4C8F62F819DC7387004200EC /* boxbottom.png */,
 				4C8F62F919DC7387004200EC /* boxupper.png */,
@@ -446,6 +455,7 @@
 				4C8F63D519DDD130004200EC /* miew13.wav in Resources */,
 				4C8F62F519D9F42A004200EC /* to.png in Resources */,
 				4C8F63E519DDD130004200EC /* miew28.wav in Resources */,
+				4C8F640B19DDEB03004200EC /* uppertext.png in Resources */,
 				4C8F63DC19DDD130004200EC /* miew2.wav in Resources */,
 				4C8F63DB19DDD130004200EC /* miew19.wav in Resources */,
 				4C8F63D219DDD130004200EC /* miew10.wav in Resources */,
@@ -453,6 +463,7 @@
 				4C8F63FD19DDD130004200EC /* miew5.wav in Resources */,
 				4C8F63F219DDD130004200EC /* miew4.wav in Resources */,
 				4C8F63DE19DDD130004200EC /* miew21.wav in Resources */,
+				4C8F640719DDE56E004200EC /* heart.png in Resources */,
 				4C8F63DD19DDD130004200EC /* miew20.wav in Resources */,
 				4C8F62FA19DC7387004200EC /* boxbottom.png in Resources */,
 				4C8F63E019DDD130004200EC /* miew23.wav in Resources */,
@@ -479,6 +490,7 @@
 				4C8F63FF19DDD130004200EC /* miew7.wav in Resources */,
 				4C8F63D119DDD130004200EC /* miew1.wav in Resources */,
 				4C8F63EC19DDD130004200EC /* miew34.wav in Resources */,
+				4C8F640A19DDEB03004200EC /* lowertext.png in Resources */,
 				4C8F63FE19DDD130004200EC /* miew6.wav in Resources */,
 				4C8F640019DDD130004200EC /* miew8.wav in Resources */,
 				4C8F63E719DDD130004200EC /* miew3.wav in Resources */,

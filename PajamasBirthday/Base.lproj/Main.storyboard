@@ -54,11 +54,16 @@
                                     <segue destination="hGm-TO-BqT" kind="modal" modalTransitionStyle="partialCurl" id="JpO-5M-Vsv"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-Fa-Zs4">
+                                <rect key="frame" x="122" y="234" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="birthdayText" destination="LaT-aO-xoY" id="5pi-0a-OBa"/>
+                        <outlet property="heart" destination="Iig-Fa-Zs4" id="N8j-nD-rt9"/>
                         <outlet property="pajamasImage" destination="Pbp-Dc-dNd" id="Nh2-Cv-wwu"/>
                         <outlet property="wolfyImage" destination="tBa-4C-bvD" id="32h-H4-a0V"/>
                     </connections>
@@ -79,8 +84,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="27A-qL-hVs">
-                                <rect key="frame" x="0.0" y="59" width="329" height="409"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uppertext.png" translatesAutoresizingMaskIntoConstraints="NO" id="27A-qL-hVs">
+                                <rect key="frame" x="10" y="114" width="301" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lowertext.png" translatesAutoresizingMaskIntoConstraints="NO" id="3oh-oc-Gvp">
+                                <rect key="frame" x="12" y="220" width="304" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boxupper.png" translatesAutoresizingMaskIntoConstraints="NO" id="92P-ob-bb9">
@@ -127,15 +136,17 @@
     </scenes>
     <resources>
         <image name="2cat.png" width="930" height="1164"/>
-        <image name="bg.jpg" width="500" height="575"/>
         <image name="boxbottom.png" width="762" height="443"/>
         <image name="boxupper.png" width="719" height="100"/>
         <image name="cathand.png" width="210" height="300"/>
         <image name="date.png" width="199" height="52"/>
         <image name="from.png" width="274" height="51"/>
         <image name="hbtext.png" width="415" height="143"/>
+        <image name="heart.png" width="1511" height="1343"/>
+        <image name="lowertext.png" width="659" height="71"/>
         <image name="pajamas.png" width="389" height="366"/>
         <image name="to.png" width="426" height="54"/>
+        <image name="uppertext.png" width="597" height="226"/>
         <image name="wolf.png" width="420" height="552"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

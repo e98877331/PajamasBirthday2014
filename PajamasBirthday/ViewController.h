@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *birthdayText;
 @property (weak, nonatomic) IBOutlet UIImageView *wolfyImage;
 @property (weak, nonatomic) IBOutlet UIImageView *pajamasImage;
+@property (weak, nonatomic) IBOutlet UIImageView *heart;
 
 @end
