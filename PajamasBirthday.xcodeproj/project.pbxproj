@@ -85,6 +85,7 @@
 		4C8F640019DDD130004200EC /* miew8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F63CE19DDD130004200EC /* miew8.wav */; };
 		4C8F640119DDD130004200EC /* miew9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F63CF19DDD130004200EC /* miew9.wav */; };
 		4C8F640319DDD278004200EC /* knock.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640219DDD278004200EC /* knock.wav */; };
+		4C8F640519DDE257004200EC /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F640419DDE257004200EC /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +183,7 @@
 		4C8F63CE19DDD130004200EC /* miew8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = miew8.wav; sourceTree = "<group>"; };
 		4C8F63CF19DDD130004200EC /* miew9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = miew9.wav; sourceTree = "<group>"; };
 		4C8F640219DDD278004200EC /* knock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = knock.wav; sourceTree = "<group>"; };
+		4C8F640419DDE257004200EC /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +292,7 @@
 		4C8F62E519D9DC9C004200EC /* image */ = {
 			isa = PBXGroup;
 			children = (
+				4C8F640419DDE257004200EC /* bg.jpg */,
 				4C8F62F819DC7387004200EC /* boxbottom.png */,
 				4C8F62F919DC7387004200EC /* boxupper.png */,
 				4C8F62F619DC6C3F004200EC /* cathand.png */,
@@ -503,6 +506,7 @@
 				4C8F63E119DDD130004200EC /* miew24.wav in Resources */,
 				4C8F63FB19DDD130004200EC /* miew48.wav in Resources */,
 				4C8F63FC19DDD130004200EC /* miew49.wav in Resources */,
+				4C8F640519DDE257004200EC /* bg.jpg in Resources */,
 				4C8F62EC19D9DC9C004200EC /* pajamas.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -79,6 +79,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="27A-qL-hVs">
+                                <rect key="frame" x="0.0" y="59" width="329" height="409"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boxupper.png" translatesAutoresizingMaskIntoConstraints="NO" id="92P-ob-bb9">
                                 <rect key="frame" x="-8" y="377" width="368" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -123,6 +127,7 @@
     </scenes>
     <resources>
         <image name="2cat.png" width="930" height="1164"/>
+        <image name="bg.jpg" width="500" height="575"/>
         <image name="boxbottom.png" width="762" height="443"/>
         <image name="boxupper.png" width="719" height="100"/>
         <image name="cathand.png" width="210" height="300"/>
