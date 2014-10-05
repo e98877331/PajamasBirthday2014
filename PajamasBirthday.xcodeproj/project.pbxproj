@@ -422,6 +422,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = towolf;
 				TargetAttributes = {
+					4C8F62AB19D9DBE6004200EC = {
+						DevelopmentTeam = ZZP6GFSM87;
+					};
 					4C8F62CC19D9DBE7004200EC = {
 						TestTargetID = 4C8F62AB19D9DBE6004200EC;
 					};
@@ -666,10 +669,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PajamasBirthday/PajamasBirthday-Prefix.pch";
 				INFOPLIST_FILE = "PajamasBirthday/PajamasBirthday-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -679,10 +685,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PajamasBirthday/PajamasBirthday-Prefix.pch";
 				INFOPLIST_FILE = "PajamasBirthday/PajamasBirthday-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -746,6 +755,7 @@
 				4C8F62E019D9DBE7004200EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C8F62E119D9DBE7004200EC /* Build configuration list for PBXNativeTarget "PajamasBirthdayTests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +764,7 @@
 				4C8F62E319D9DBE7004200EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
